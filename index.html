@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
 </head>
-<body>
-<h2>To do List:</h2>
 
+<body>
+    <form action="">
+        <div class="box">
+            <h2>To do list</h2>
+            <input type="search" id="search" placeholder="Search todo..." class="search-input">
+            <ul id="list"></ul>
+            <div class="div">
+                <input type="text" placeholder="Write here..." id="input">
+                <button>Add todo</button>
+                <div id="template" style="display: none;">
+                    <span class="todo-text"></span>
+                    <i class="fa-solid fa-pen-to-square edit"
+                        style="color: yellow; margin-left: 10px; cursor: pointer;"></i>
+                    <i class="fa-solid fa-trash delete" style="color: red; margin-left: 10px; cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="sandbox.js"></script>
 </body>
+
 </html>
